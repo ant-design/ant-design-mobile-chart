@@ -1,0 +1,63 @@
+{
+  "name": "ant-design-mobile-chart",
+  "version": "0.1.0",
+  "description": "react移动端图表库",
+  "main": "index",
+  "scripts": {
+    "prepublish": "npm run compile",
+    "compile": "rm -rf lib && babel src --out-dir lib",
+    "lint": "eslint ./",
+    "test": "jest test",
+    "demo": "webpack-dev-server --open --mode development --config demo/webpack.config.js",
+    "start": "npm run demo",
+    "build": "rm -rf lib && babel src --out-dir lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ant-design/ant-design-mobile-chart.git"
+  },
+  "keywords": [
+    "chart",
+    "react",
+    "f2"
+  ],
+  "author": "cycgit",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ant-design/ant-design-mobile-chart/issues"
+  },
+  "homepage": "https://github.com/ant-design/ant-design-mobile-chart#readme",
+  "dependencies": {
+    "@antv/f2": "^3.1.20"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^7.2.3",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-import": "^1.7.0",
+    "babel-plugin-transform-export-extensions": "^6.22.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-babel": "^5.1.0",
+    "eslint-plugin-import": "^2.10.0",
+    "eslint-plugin-jsx-a11y": "^5.1.1",
+    "eslint-plugin-react": "^7.7.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "jest": "^23.1.0",
+    "jest-canvas-mock": "^1.0.2",
+    "react": "^16.4.0",
+    "react-dom": "^16.3.2",
+    "react-hot-loader": "^4.1.2",
+    "style-loader": "^0.21.0",
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}
