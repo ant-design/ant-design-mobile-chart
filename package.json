@@ -1,8 +1,8 @@
 {
   "name": "ant-design-mobile-chart",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "react移动端图表库",
-  "main": "index",
+  "main": "./lib/index.js",
   "scripts": {
     "prepublish": "npm run compile",
     "compile": "rm -rf lib && babel src --out-dir lib",
