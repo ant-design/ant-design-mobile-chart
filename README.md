@@ -108,3 +108,4 @@ export default LineDemo;
 
 ```
 
+![chart](https://gw.alipayobjects.com/zos/rmsportal/vzSGCkmkOIHlVBZbqoQA.png)
