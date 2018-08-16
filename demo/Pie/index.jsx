@@ -1,46 +1,46 @@
 import React, { Component } from 'react';
-import { Chart, Legend, Coord, Interval, Guide, Tooltip, Axis, F2 } from '@ali/f2-react';
+import { Chart, Legend, Coord, Interval, Guide, Tooltip, Axis, F2 } from 'ant-design-mobile-chart';
 const { Group, Shape } = F2.G;
 
 const data = [
   {
-      "name": "余额", 
-      "color": "64C4EF", 
-      "value": "10000.00", 
-      "proportion": 0.07, 
-      "spm": "c12899.d23652", 
+      "name": "余额",
+      "color": "64C4EF",
+      "value": "10000.00",
+      "proportion": 0.07,
+      "spm": "c12899.d23652",
       "a": "1"
-  }, 
+  },
   {
-      "name": "余额宝", 
-      "color": "F5865C", 
-      "value": "20000.00", 
-      "proportion": 0.13, 
-      "spm": "c12899.d23653", 
+      "name": "余额宝",
+      "color": "F5865C",
+      "value": "20000.00",
+      "proportion": 0.13,
+      "spm": "c12899.d23653",
       "a": "1"
-  }, 
+  },
   {
-      "name": "定期", 
-      "color": "3DA4EE", 
-      "value": "30000.00", 
-      "proportion": 0.20, 
-      "spm": "c12899.d23656", 
+      "name": "定期",
+      "color": "3DA4EE",
+      "value": "30000.00",
+      "proportion": 0.20,
+      "spm": "c12899.d23656",
       "a": "1"
-  }, 
+  },
   {
-      "name": "基金", 
-      "color": "6088EC", 
-      "value": "40000.00", 
-      "proportion": 0.27, 
-      "spm": "c12899.d23655", 
+      "name": "基金",
+      "color": "6088EC",
+      "value": "40000.00",
+      "proportion": 0.27,
+      "spm": "c12899.d23655",
       "a": "1"
-  }, 
+  },
   {
-      "name": "黄金", 
-      "color": "F8CC49", 
-      "value": "50000.00", 
-      "proportion": 0.33, 
-      "spm": "c12899.d23654", 
+      "name": "黄金",
+      "color": "F8CC49",
+      "value": "50000.00",
+      "proportion": 0.33,
+      "spm": "c12899.d23654",
       "a": "1"
   }
 ];
@@ -110,7 +110,7 @@ class PieDemo extends Component {
     };
     const itemFormatter = val => { return val + '  ' + legendMapData[val]; };
     return <div>
-      <Chart source={ data } onRendered={this.onRendered} width={375} height={250}>
+      <Chart source={data} onRendered={this.onRendered} width={375} height={250} pixelRatio={window.devicePixelRatio}>
         <Coord type="polar" transposed={true} innerRadius={0.8} radius={0.8} />
         <Axis enable={false} />
         <Interval position="a*proportion" color="name" adjust="stack" animate={animate}/>

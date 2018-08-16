@@ -1,53 +1,90 @@
 import React, { Component } from 'react';
-import { Chart, Line, Scale, Guide } from '@ali/f2-react';
+import { Chart, Line, Scale, Guide } from 'ant-design-mobile-chart';
+
 
 const data = [
   {
-    name: '苹果',
-    count: 5,
+    "reportDateTimestamp": 1529856000000,
+    "codeType": "INDEX_CODE",
+    "rate": 0
   },
   {
-    name: '香蕉',
-    count: 3,
+    "reportDateTimestamp": 1529942400000,
+    "codeType": "INDEX_CODE",
+    "rate": 0.0082
   },
   {
-    name: '牛奶',
-    count: 10,
+    "reportDateTimestamp": 1530028800000,
+    "codeType": "INDEX_CODE",
+    "rate": 0.0284
   },
   {
-    name: '橘子',
-    count: 13,
+    "reportDateTimestamp": 1530115200000,
+    "codeType": "INDEX_CODE",
+    "rate": -0.0385
   },
   {
-    name: '西瓜',
-    count: 8,
+    "reportDateTimestamp": 1530201600000,
+    "codeType": "INDEX_CODE",
+    "rate": -0.0139
   },
-];
+  {
+    "reportDateTimestamp": 1530460800000,
+    "codeType": "INDEX_CODE",
+    "rate": -0.0428
+  },
+  {
+    "reportDateTimestamp": 1530547200000,
+    "codeType": "INDEX_CODE",
+    "rate": 0.0425
+  },
+  {
+    "reportDateTimestamp": 1529856000000,
+    "codeType": "PRODUCT_ID",
+    "rate": 0
+  },
+  {
+    "reportDateTimestamp": 1529942400000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0075
+  },
+  {
+    "reportDateTimestamp": 1530028800000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0264
+  },
+  {
+    "reportDateTimestamp": 1530115200000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0355
+  },
+  {
+    "reportDateTimestamp": 1530201600000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0113
+  },
+  {
+    "reportDateTimestamp": 1530460800000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0383
+  },
+  {
+    "reportDateTimestamp": 1530547200000,
+    "codeType": "PRODUCT_ID",
+    "rate": -0.0377
+  }
+]
+
 
 class LineDemo extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      data,
-    }
-  }
-  onClick() {
-    return () => {
-      data[3].count = 2;
-
-      this.setState({
-        data,
-      })
-    }
-  }
   render() {
     return (
-      <div onClick={this.onClick()}>
-        <Chart source={this.state.data}>
-          <Line position="name*count" />
-          <Scale field="name" range={[0, 1]} />
-          <Guide type="tag" position={['牛奶', 10]} content="这是牛奶" />
-          { null }
+      <div>
+        <Chart source={data} width="400" height="200" pixelRatio={window.devicePixelRatio}>
+          <Line position="reportDateTimestamp*rate" color="codeType"/>
+          <Scale field="reportDateTimestamp" range={[0, 1]} tickCount={3} type="timeCat" mask="MM-DD" />
+          <Scale field="rate" tickCount={5} formatter={(rate) => `${(rate*100).toFixed(2)}%`} />
+          <Guide type="tag" position={[1530028800000, 0.0284]} content="买入" />
         </Chart>
       </div>
     );

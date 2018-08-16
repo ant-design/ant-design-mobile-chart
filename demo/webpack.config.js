@@ -5,7 +5,7 @@ module.exports = {
   devServer: {
     contentBase: './demo',
     stats: 'minimal',
-    port: 9000,
+    port: 9001,
     disableHostCheck: true,
   },
   module: {
@@ -20,7 +20,7 @@ module.exports = {
               [
                 "import",
                 {
-                  "libraryName": "@ali/f2-react",
+                  "libraryName": "ant-design-mobile-chart",
                   "libraryDirectory": "src"
                 }
               ]
@@ -39,7 +39,7 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx'],
     alias: {
-      '@ali/f2-react': path.join(__dirname, '..'),
+      'ant-design-mobile-chart': path.join(__dirname, '..'),
     },
   },
   output: {
