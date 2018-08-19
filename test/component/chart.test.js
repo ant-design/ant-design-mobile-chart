@@ -36,15 +36,17 @@ describe('Chart组件', () => {
         width="1088"
         height="588"
         padding={[0, 20]}
+        appendPadding={[20, 20]}
         pixelRatio={3}
         animate={false}
         scales={{ name: { range: [0.1, 0.55] } }}
-        onRender={(chart) => {
+        onRendered={(chart) => {
           expect(chart.get('width')).toBe('1088');
           expect(chart.get('height')).toBe('588');
           expect(chart.get('pixelRatio')).toBe(3);
           expect(chart.get('scales').name.range).toEqual([0.1, 0.55]);
           expect(chart.get('padding')).toEqual([0, 20]);
+          expect(chart.get('appendPadding')).toEqual([20, 20]);
           expect(chart.get('animate')).toBe(false);
         }}
       >
