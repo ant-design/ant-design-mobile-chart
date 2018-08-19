@@ -20,6 +20,7 @@ class Chart extends Component {
   componentDidMount() {
     const {
       pixelRatio, padding, width, height,
+      appendPadding,
     } = this.props;
 
     const chart = new F2.Chart({
@@ -28,6 +29,7 @@ class Chart extends Component {
       height,
       padding,
       pixelRatio,
+      appendPadding,
     });
     this.chart = chart;
     this.chartRendered = false;
