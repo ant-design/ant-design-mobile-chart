@@ -1,11 +1,11 @@
 {
   "name": "ant-design-mobile-chart",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "react移动端图表库",
   "main": "./lib/index.js",
   "scripts": {
     "prepublish": "npm run compile",
-    "compile": "rm -rf lib && babel src --out-dir lib",
+    "compile": "rm -rf lib && babel src --out-dir lib && npm run umd",
     "lint": "eslint ./",
     "test": "jest test",
     "demo": "webpack-dev-server --open --mode development --config demo/webpack.config.js",
