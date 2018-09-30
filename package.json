@@ -10,7 +10,8 @@
     "test": "jest test",
     "demo": "webpack-dev-server --open --mode development --config demo/webpack.config.js",
     "start": "npm run demo",
-    "build": "rm -rf lib && babel src --out-dir lib"
+    "build": "rm -rf lib && babel src --out-dir lib && npm run umd",
+    "umd": "webpack"
   },
   "repository": {
     "type": "git",
