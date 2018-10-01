@@ -1,7 +1,7 @@
 const path = require('path');
 
 module.exports = {
-  entry: './src/umd.js',
+  entry: './src/index.js',
   module: {
     rules: [
       {
@@ -27,6 +27,6 @@ module.exports = {
     path: path.resolve(__dirname, 'lib'),
     libraryTarget: 'umd',
   },
-  mode: 'development',
-  // mode: 'production',
+  // mode: 'development',
+  mode: 'production',
 };
