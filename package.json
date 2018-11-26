@@ -1,6 +1,6 @@
 {
   "name": "ant-design-mobile-chart",
-  "version": "0.1.8",
+  "version": "0.1.9",
   "description": "react移动端图表库",
   "main": "./lib/index.js",
   "scripts": {
