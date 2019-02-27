@@ -1,5 +1,7 @@
 # ant-design-mobile-chart
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/ant-design/ant-design-mobile-chart.svg)](https://greenkeeper.io/)
+
 ## 说明
 
 `ant-design-mobile-chart` 是为移动端开发的 react 图表组件库，图形语法底层基于[F2](https://antv.alipay.com/zh-cn/f2/3.x/index.html) 实现图形语法。 组件库具有轻量、灵活、易用的特点
