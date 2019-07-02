@@ -17,13 +17,13 @@ module.exports = {
           loader: 'babel-loader',
           options: {
             plugins: [
-              [
-                "import",
-                {
-                  "libraryName": "ant-design-mobile-chart",
-                  "libraryDirectory": "src"
-                }
-              ]
+              // [
+              //   "import",
+              //   {
+              //     "libraryName": "ant-design-mobile-chart",
+              //     "libraryDirectory": "src"
+              //   }
+              // ]
             ]
           }
         }
