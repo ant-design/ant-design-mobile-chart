@@ -1,4 +1,3 @@
-import '@antv/f2/lib/geom/area';
 import util from '../../common/util';
 const { isFunction, isArray, filterObjectKey } = util;
 

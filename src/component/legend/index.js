@@ -1,10 +1,8 @@
-import Legend from '@antv/f2/lib/plugin/legend';
 import util from '../../common/util';
 const { filterObjectKey } = util;
 
 export default (props) => {
   const { chart, enable } = props;
-  chart.registerPlugins(Legend);
   if (enable === false) {
     chart.legend(enable);
   } else {

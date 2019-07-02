@@ -1,18 +1,19 @@
-import Chart from './chart';
-import Axis from './axis';
-import Scale from './scale';
-import Coord from './coord';
-import Line from './line';
-import Point from './point';
-import Area from './area';
-import Interval from './interval';
-import Legend from './legend';
-import Guide from './guide';
-import Tooltip from './tooltip';
-import util from './util';
 import F2 from './f2';
+import Chart from './component/chart';
+import Axis from './component/axis';
+import Scale from './component/scale';
+import Coord from './component/coord';
+import Line from './component/geom/line';
+import Point from './component/geom/point';
+import Area from './component/geom/area';
+import Interval from './component/geom/interval';
+import Legend from './component/legend';
+import Guide from './component/guide';
+import Tooltip from './component/tooltip';
+import util from './util';
 
 export {
+  F2,
   Chart,
   Axis,
   Scale,
@@ -25,5 +26,4 @@ export {
   Guide,
   Tooltip,
   util,
-  F2,
 };
