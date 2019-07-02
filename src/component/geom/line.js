@@ -1,4 +1,3 @@
-import '@antv/f2/lib/geom/line';
 import util from '../../common/util';
 const { isFunction, isArray, filterObjectKey } = util;
 

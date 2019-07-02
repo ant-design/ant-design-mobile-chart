@@ -1,11 +1,7 @@
 import React, { Component } from 'react';
-import Animation from '@antv/f2/lib/animation/detail';
-import F2 from '@antv/f2/lib/core';
-import '@antv/f2/lib/geom/adjust';
-import '@antv/f2/lib/scale/time-cat';
+import F2 from '../../f2';
 import util from '../../common/util';
 // 全局注册精细动画
-F2.Chart.plugins.register(Animation);
 
 /**
  * Chart组件

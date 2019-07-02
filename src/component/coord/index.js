@@ -1,5 +1,3 @@
-import '@antv/f2/lib/coord/polar';
-import '@antv/f2/lib/component/axis/circle';
 import util from '../../common/util';
 const { filterObjectKey } = util;
 
