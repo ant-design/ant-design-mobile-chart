@@ -52,7 +52,7 @@
     "eslint-plugin-react": "^7.7.0",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "jest": "^23.1.0",
-    "jest-canvas-mock": "^1.0.2",
+    "jest-canvas-mock": "^2.1.0",
     "react": "^16.4.0",
     "react-dom": "^16.3.2",
     "react-hot-loader": "^4.1.2",
