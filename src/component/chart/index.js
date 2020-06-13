@@ -52,6 +52,7 @@ class Chart extends Component {
     }
 
     if (this.chartRendered) {
+      this.chart.set('rendered', true);
       this.chart.changeData(source);
     } else {
       this.chart.render();
